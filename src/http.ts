@@ -24,7 +24,7 @@ export async function fetchData() {
 
 export async function postData(url = "", data = {}) {
   console.log(data);
-  const response = await fetch(`https://loatesting.netlify.app${url}`, {
+  const response = await fetch(`https://loatesting.netlify.app/${url}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -38,7 +38,7 @@ export async function postData(url = "", data = {}) {
 }
 
 export async function getData(url = "") {
-  const response = await fetch(`https://loatesting.netlify.app${url}`);
+  const response = await fetch(`https://loatesting.netlify.app/${url}`);
   const resData = await response.json();
 
   if(!response.ok){
@@ -48,7 +48,7 @@ export async function getData(url = "") {
 }
 
 export async function deleteData(url = "", data = {}) {
-  const response = await fetch(`https://loatesting.netlify.app${url}`, {
+  const response = await fetch(`https://loatesting.netlify.app/${url}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
@@ -60,7 +60,7 @@ export async function deleteData(url = "", data = {}) {
 }
 
 export async function updateData(url = "", data = {}) {
-  const response = await fetch(`https://loatesting.netlify.app${url}`, {
+  const response = await fetch(`https://loatesting.netlify.app/${url}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
