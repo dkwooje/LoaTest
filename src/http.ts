@@ -12,7 +12,7 @@ export async function fetchOuterData() {
 
 // 테스트 대상 전체 직업 통계 데이터 조회
 export async function fetchData() {
-  const response = await fetch('https://loatesting.netlify.app//statistics/data');
+  const response = await fetch('https://loatesting.netlify.app/statistics/data');
   const resData = await response.json();
 
   if(!response.ok){
